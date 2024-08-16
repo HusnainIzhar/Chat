@@ -20,7 +20,7 @@ export const SocketProvider: FC<Props> = ({ children }) => {
 
   useEffect(() => {
     const newSocket = io(
-      "http://localhost:4000/"
+      "https://chat-people-2a28f4eef0fb.herokuapp.com/"
     );
 
     setSocket(newSocket);

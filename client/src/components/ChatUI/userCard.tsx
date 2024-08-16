@@ -22,7 +22,7 @@ const UserCard: React.FC<Props> = ({ name, isActive, onClick }) => {
         alt="user"
         className="rounded-full bg-[#18D39E] border"
       />
-      <div>
+      <div className="">
         <h2 className="text-xl font-semibold capitalize">{name}</h2>
         <p className="text-xs">Online</p>
       </div>

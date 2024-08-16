@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { useSocket } from "../providers/socket";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 type Props = {};
 
@@ -12,18 +13,17 @@ const Home = (props: Props) => {
 
   const handleSubmit = () => {
     socket?.emit("newUser", name);
-    setName("");
     router.push("/chat");
   };
   return (
-    <div className="relative h-screen overflow-hidden w-screen bg-purple-100">
+    <div className="relative h-screen overflow-hidden w-screen bg-white">
       <div className="flex flex-col items-center justify-center h-full">
         <div className="top-36 flex flex-col absolute gap-5 items-center">
-          <h1 className="text-4xl font-bold">Linkup</h1>
-          <p className="text-[#7678ed]">Connecting people globally!</p>
+          <Image src={"./logo.svg"} height={250} width={250} alt="logo" />
+          <p className="text-[#FFA429] xs:mt-5 mt-10">Connecting people globally!</p>
         </div>
 
-        <div className="flex gap-5">
+        <div className="flex gap-5 flex-wrap justify-center">
           <input
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -33,7 +33,7 @@ const Home = (props: Props) => {
           />
           <button
             onClick={handleSubmit}
-            className="py-2 px-3 rounded-md bg-[#202022] text-white"
+            className="py-2 px-3 rounded-md bg-[#FFA429] text-white hover:cursor-pointer"
           >
             Get Started!
           </button>
