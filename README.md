@@ -36,14 +36,15 @@ This repository contains a real-time chat application built using Socket.io for 
    
 2. Install the required packages for both the server and client:
 
-```
-cd server
-npm install
+   ```
+   cd server
+   npm install
 
-cd ../client
-npm install
-```
+   cd ../client
+   npm install
+   ```
 3. Run the application in development mode:
+
    ```
    npm run dev
    ```
