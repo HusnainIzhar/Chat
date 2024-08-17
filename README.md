@@ -48,3 +48,11 @@ This repository contains a real-time chat application built using Socket.io for 
    ```
    npm run dev
    ```
+   
+## Live Demo
+Check out the live demo of the chat app [here](https://socket-io-chat-client-delta.vercel.app/).
+
+## Contact
+For any questions or inquiries, please contact me at [Husnainizhar@outlook.com](mailto:Husnainizhar@outlook.com).
+
+
